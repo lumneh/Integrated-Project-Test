@@ -497,10 +497,15 @@ section {
 *********Team CSS*********
 **************************/
 #team {
+ float: none;
+  margin: auto;
+
   padding-top: 0;
 }
 
 .team-members {
+  float: none;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -978,5 +983,10 @@ ul.address {
 }
 
 /*Presets*/
+
+.col-centered{
+  float: none;
+  margin: auto;
+}
 
 
