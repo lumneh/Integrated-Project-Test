@@ -1,0 +1,45 @@
+.member-image img{
+
+	height: 150px;
+
+}
+
+.m-button {
+	height: 20px;
+	margin-top: 0px;
+}
+
+.member-button a{
+	font-size: 12px;
+}
+
+.team-buttons{
+	margin-top: 0px;
+}
+
+#team{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.member-info{
+	text-align: left;
+	font-size: 12px;
+}
+
+
+.footer-logo a{
+	color: #ffffff;
+}
+
+.footer-logo a:hover{
+	color: #424242;
+}
+
+/*#home-slider .caption h1 span{
+	color: #ffae00;
+}
+
+.main-nav{
+	background-color: #ffae00;
+}*/
