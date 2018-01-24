@@ -1673,7 +1673,16 @@ textarea {
 
 }
 
+.productcells {
 
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.trProductsimg {
+
+    border-radius: 5px;
+}
 
 
 
