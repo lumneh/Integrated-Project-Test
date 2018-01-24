@@ -26,6 +26,17 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 30px;
   margin-bottom: 20px;
+
+}
+
+.about-h2{
+  text-align: center;
+}
+
+.team-h2{
+  margin-top: 80px;
+  margin-bottom: -40px;
+  padding-bottom: 0px;
 }
 
 h3 {
