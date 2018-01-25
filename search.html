@@ -35,14 +35,14 @@
       <div class="carousel-inner">
         <div class="item active">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">Welcome to <span>Integrated Project</span></h1>
-            <p class="animated fadeInRightBig">Group 1 Internship Experience!</p>
+            <h1 class="animated fadeInLeftBig">Welcome to <span>Internship Profiles</span></h1>
+            <p class="animated fadeInRightBig">Student Internship Experiences!</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Continue Reading</a>
           </div>
         </div>
         <div class="item" style="">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">Say Hello to <span>Group 1</span></h1>
+            <h1 class="animated fadeInLeftBig">Say Hello to <span>the students</span></h1>
             <p class="animated fadeInRightBig">Lum-neh - Ariyike - Lina - Mary-Ann - Debbie</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Learn more about them</a>
           </div>
@@ -50,7 +50,7 @@
         <div class="item">
           <div class="caption">
             <h1 class="animated fadeInLeftBig">We are <span>ALU Students</span></h1>
-            <p class="animated fadeInRightBig">Computer Science - Web Development - Group Projectsx</p>
+            <p class="animated fadeInRightBig">Computer Science - Web Development - Group Project</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Learn More</a>
           </div>
         </div>
@@ -76,13 +76,9 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="#home">Home</a></li>
+            <li class="scroll active"><a href="index.html">Home</a></li>
             <!-- <li class="scroll"><a href="#about-us">About Us</a></li>  -->                    
-            <li class="scroll"><a href="#team">Team</a></li>
-
-
             <li class="scroll"><a href="#blog">Blog</a></li>
-            
             <li class="scroll"><a href="#contact">Contact</a></li>       
           </ul>
         </div>
@@ -98,6 +94,97 @@
             <h2>Search</h2>
           </div>
         </div>
+		
+		  <link href="css/main.css" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  color:black;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color:black;
+}
+</style>
+</head>
+<body>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by name.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country of Internship</th>
+  </tr>
+  <tr>
+    <td><a href="baktigoto/index-3.html" class="btn btn-lg btn-primary">Lum-neh Angela</a></td>
+    <td>South Africa</td>
+  </tr>
+  <tr>
+    <td><a href="baktigoto/index-6.html" class="btn btn-lg btn-primary">Ariyike Adetimehin</a></td>
+    <td>Nigeria</td>
+  </tr>
+  <tr>
+    <td><a href="baktigoto/index-2.html" class="btn btn-lg btn-primary">Debbie Adejumo</a></td>
+    <td>Kenya</td>
+  </tr>
+  <tr>
+    <td><a href="baktigoto/index-5.html" class="btn btn-lg btn-primary">Lina Dosse</a></td>
+    <td>Morrocco</td>
+  </tr> 
+  <tr>
+    <td><a href="baktigoto/index-4.html" class="btn btn-lg btn-primary">Mary Ann Achieng</a></td>
+    <td>Kenya</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
         <div class="col-sm-6">
           <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
