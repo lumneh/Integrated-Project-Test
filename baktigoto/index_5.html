@@ -140,10 +140,7 @@ a dominant supplier in China, and has won the international market by adopting a
 Cisco Systems, Alcatel-Lucent, Ericsson, Nokia Siemens Networks, Nortel, NEC, ZTE
                                          </p>
                                     </div>
-                                <div class="w3-clear nextprev">
-                                    <a class="w3-left w3-btn" href="fontawesome_icons_brand.asp">❮ Previous</a>
-                                    <a class="w3-right w3-btn" href="fontawesome_icons_currency.asp">Next ❯</a>
-                                </div>
+                                
                                 <div class="mySlides">
                                 <h2>Size</h2>
                                     <p>
@@ -173,6 +170,31 @@ Some of its clients:
         <ul><li>Maroc Telecom, Orange and INWI (Morocco)</li>
             <li>Vodafone, at&t, Singtel (international)</li></ul>
                                     </div>
+                                    
+                                    <div class="w3-clear nextprev">
+                                    <a class="w3-left w3-btn" href="fontawesome_icons_brand.asp" onclick="plusDivs(-1)">❮ Previous</a>
+                                    <a class="w3-right w3-btn" href="fontawesome_icons_currency.asp" onclick="plusDivs(-1)">Next ❯</a>
+                                </div>
+                                    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
                             </article>
                         </div>
 
