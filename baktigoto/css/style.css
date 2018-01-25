@@ -1684,5 +1684,17 @@ textarea {
     border-radius: 5px;
 }
 
+.myspecial {
+
+    text-align: center;
+    color: #fff;
+
+}
+
+#globallyknown{
+
+    margin: auto;
+    display: block;
+}
 
 
