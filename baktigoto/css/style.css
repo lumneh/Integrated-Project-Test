@@ -694,6 +694,14 @@ textarea {
 	transform:rotate(45deg);
 }
 
+.yes{
+    margin-left: 20px;
+    
+}
+.yes a {
+	background:transparent;
+}
+
 /**************
  * Design Section
  **************/

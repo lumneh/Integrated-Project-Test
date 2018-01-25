@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Thomson Reuters Lagos</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window.*/
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var deloitte = {lat: -1.2633736, lng: 36.765210600000046};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: deloitte
+        });
+
+        var contentString = '<div id="content">'+
+            '<h1 id="firstHeading" class="firstHeading">Deloitte, Nairobi</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Visit the website: </p>'+
+            '<a href="https://www2.deloitte.com/ke/en.html" target="blank">'+
+            'DELOITTE AND TOUCHE EAST AFRICA</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: deloitte,
+          map: map,
+          title: 'Deloitte East Africa'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByb2_bQgKD2noumrqIH5yy_Ae2DpKqRMM&callback=initMap">
+    </script>
+  </body>
+</html>
