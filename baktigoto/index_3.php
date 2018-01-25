@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <title>Baktigoto - Responsive Resume & Portfolio HTML5 Template</title><!-- site title name -->
+        <title>Angela's Internship Page</title><!-- site title name -->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
@@ -59,9 +59,9 @@
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a href="#home"  class="active">Home</a></li>
                                         <li><a href="#about">About Me</a></li>
-                                        <li><a href="#service">My services</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
-                                        <li><a id="link" href="#contact">Contact</a></li>
+                                        <li><a href="#service">Services</a></li>
+                                        <li><a href="#portfolio">Projects</a></li>
+                                        <li><a id="link" href="#contact">My Reflection</a></li>
                                     </ul><!-- end of /.ul -->
                                 </div><!-- end of /.navbar-collapse -->
 
@@ -446,14 +446,14 @@
 
                 #WRITE DOWN COMMENTS#
 
-               $write = fopen("com.txt", "a+");
+               $write = fopen("comment.txt", "a+");
                fwrite($write, '<h4 class="glyphicon glyphicon-user"> '.$name.'</h4><br>'.$mes.'<br>');
                fclose($write);
 
 
                 #DISPLAY COMMENTS#
 
-               $read = fopen("com.txt", "r+t");
+               $read = fopen("comment.txt", "r+t");
 
                echo "<h4>Previous Comments:</h4><br>";
 
@@ -468,7 +468,7 @@
             else {
                 #DISPLAY COMMENTS#
 
-               $read = fopen("com.txt", "r+t");
+               $read = fopen("comment.txt", "r+t");
 
                echo "<h4>Previous Comments:</h4><br>";
 
