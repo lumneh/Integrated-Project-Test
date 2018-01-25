@@ -1545,7 +1545,7 @@ textarea {
     background:#f8ba01;
 }
 .nicescroll-cursors{
-    background: #ffae01 !important;
+    background:  #028fcc !important;
     border: none !important
 }
 
@@ -1684,5 +1684,17 @@ textarea {
     border-radius: 5px;
 }
 
+.myspecial {
+
+    text-align: center;
+    color: #fff;
+
+}
+
+#globallyknown{
+
+    margin: auto;
+    display: block;
+}
 
 
