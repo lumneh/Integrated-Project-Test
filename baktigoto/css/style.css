@@ -1704,10 +1704,13 @@ textarea {
     color: #028fcc;
 }
 
-#globallyknown{
+#globallyknown, #ariworkplan{
 
     margin: auto;
     display: block;
 }
 
+.col-lg-4 col-md-4 reflectbabe{
 
+    color: #028fcc;
+}
