@@ -173,22 +173,21 @@ function showDivs(n) {
                         <div class="col-lg-6">
                             <article class="about-me-box">
                                 <h2>Location</h2>
-                                 <div id="map"></div>
+                                  <div id="map"></div>
     <script>
-      // This example displays a marker at the center of Australia.
       // When the user clicks the marker, an info window opens.
       function initMap() {
-        var thomsonR = {lat: 6.434117199999999, lng: 3.4348817000000054};
+        var huaweiR = {lat: 33.9575195, lng: -6.868895899999984};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 16,
-          center: thomsonR
+          center: huaweiR
         });
         var contentString = '<div id="content">'+
-            '<h1 id="firstHeading" class="firstHeading">Thomson Reuters, Lagos</h1>'+
+            '<h1 id="firstHeading" class="firstHeading">Huawei Technologies co. Ltd - Rabat</h1>'+
             '<div id="bodyContent">'+
-            '<p>Located on the 6th Floor of the KPMG Tower, visit the website: </p>'+
-            '<a href="https://africa.thomsonreuters.com/en.html" target="blank">'+
-            'https://africa.thomsonreuters.com/en.html</a> '+
+            '<p>Avenue Annakhil, Rabat, Morocco</p>'+
+            '<a href="huawei.com" target="blank">'+
+            'huawei.com</a> '+
             '</p>'+
             '</div>'+
             '</div>';
@@ -196,9 +195,9 @@ function showDivs(n) {
           content: contentString
         });
         var marker = new google.maps.Marker({
-          position: thomsonR,
+          position: huaweiR,
           map: map,
-          title: 'Thomson Reuters Lagos'
+          title: 'Huawei Technologies co. Ltd - Rabat'
         });
         marker.addListener('click', function() {
           infowindow.open(map, marker);
