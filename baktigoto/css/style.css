@@ -44,6 +44,19 @@
     margin: 40px;
 }
 
+.projectPlan{
+    padding-top: -40px;
+    margin-top: -200px;
+    text-align: center;
+}
+
+.social{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+
 
 body {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -163,6 +176,11 @@ h5 {
 h6 {
     font-size: 13px;
 }
+
+
+
+
+
 .lead {
     font-family: 'Raleway', Arial,sans-serif !important;
     font-size: 18px;
@@ -440,6 +458,11 @@ textarea {
     margin: 0;
     padding: 6px 0;
 }
+
+.debbieProfile h2{
+    font-size: 35px;
+}
+
 .profile-caption h2 span{
     text-transform: uppercase;
     color:/* #ffae00*/ #028fcc;
@@ -1704,10 +1727,13 @@ textarea {
     color: #028fcc;
 }
 
-#globallyknown{
+#globallyknown, #ariworkplan{
 
     margin: auto;
     display: block;
 }
 
+.col-lg-4 col-md-4 reflectbabe{
 
+    color: #028fcc;
+}
