@@ -7,11 +7,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <title>Lina's Internship</title><!-- site title name -->
+        <title>Lina Dosse</title><!-- site title name -->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="icon" type="image/jpg" href="/Integrated-Project-Test\images\team\Lina.jpg" />
         <!-- start style -->
         <link rel="stylesheet" href="css/style.css">
 
@@ -46,9 +46,13 @@
                                     <button class="menu-btn show-btn"></button>
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a href="https://lumneh.github.io/Integrated-Project-Test/"  class="active">Home</a></li>
-                                        <li><a href="#about">About Me</a></li>
-                                        <li><a href="#service">My services</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
+                                        <li><a href="#profile-item">About Me</a></li>
+                                        <li><a href="#about">Placement</a></li>
+                                        <li><a href="#process">Application Process</a></li>
+                                        <li><a href="#tasks">Tasks</a></li>
+                                        <li><a href="#reflections">Reflections</a></li>
+                                        <li><a href="#plan">Plan</a></li>
+                                        <li><a href="#socialm">Feeds</a></li>
                                         <li><a id="link" href="#contact">Contact</a></li>
                                     </ul><!-- end of /.ul -->
                                 </div><!-- end of /.navbar-collapse -->
@@ -56,12 +60,17 @@
                             </div><!-- end of /.container-fluid -->
                         </nav><!-- end of /. nav section -->
                         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 profile-image wow bounceInUp center animated">
-                            <img  class="img-responsive" src="https://www.google.com/imgres?imgurl=http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg&imgrefurl=http://www.planwallpaper.com/images&h=1200&w=1600&tbnid=sYibpKnJxiFExM:&tbnh=150&tbnw=200&usg=__1KVXTMMLh1TflUINMeGakPVZBuU=&vet=10ahUKEwjhqOnWiJvXAhXmO5oKHeJ9DK4Q_B0IcTAK..i&docid=z8O4lWNcsz2mNM&itg=1&sa=X&ved=0ahUKEwjhqOnWiJvXAhXmO5oKHeJ9DK4Q_B0IcTAK" alt="testtesttest" />
+                            <img  class="img-responsive" style="margin:50px;" src="/Integrated-Project-Test\images\team\Lina.jpg" alt="Lina Bennani Dosse" />
                         </div><!-- end of /.column-->
+                        
+                            
+                       
                         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 profile-item wow flipInX center animated">
                             <article class="profile-caption">
-                                <h2>Hello, I'm <span>Lina Bennani Dosse</span></h2>
-                                <h2>I am a 3rd year student majoring in Computing.</h2>
+                                <h2><b>Welcome To My Page!</b></h2>
+                                <h1>I'm <span><b>Lina Bennani Dosse</b></span></h2>
+                                <h2> a 3rd year ALU student majoring in Computing.</h2>
+                                <h2> I have interned with Huawei Technologies in Rabat</h2>
                                 <div class="social-media">
                                     <a href="https://www.facebook.com/lina.bennani.5"><i class="fa fa-facebook"></i></a>
                                     <a href="https://plus.google.com/110478595061924259489"><i class="fa fa-google-plus"></i></a>
@@ -126,12 +135,16 @@ Cisco Systems, Alcatel-Lucent, Ericsson, Nokia Siemens Networks, Nortel, NEC, ZT
                                    </p>
                                  </div>
                                     
-                                    <div class="nextprev">
-                                        <button onclick="plusDivs(-1)" style=" color: white; background-color: #028fcc;">❮ Previous</button>
-                                        <button onclick="plusDivs(1)" style=" color: white; background-color: #028fcc;">Next ❯</button>
-                                    
-                                </div>
-                                    </div>
+                            <div class="customNavigation">
+                            <button class="prev" onclick="plusDivs(-1)" style=" color: white; background-color: #028fcc;">
+                               ❮ Previous&nbsp;</button>
+                            <button class="next" onclick="plusDivs(1)" style=" color: white; background-color: #028fcc;">
+                               Next ❯&nbsp;
+                            </button>
+                         </div><!-- end of /.slider navigation -->
+                            
+                        
+                            </div>
                                     <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -158,8 +171,40 @@ function showDivs(n) {
                         <div class="col-lg-6">
                             <article class="about-me-box">
                                 <h2>Location</h2>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.3625628588625!2d-6.871084585328181!3d33.957519480631824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7132dc0a5e059%3A0x5097e60a6a8897b5!2sHuawei+Technologies+co.+Ltd+-+Rabat!5e0!3m2!1sen!2s!4v1509461908066" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+                                  <div id="map"></div>
+    <script>
+      // When the user clicks the marker, an info window opens.
+      function initMap() {
+        var huaweiR = {lat: 33.9575195, lng: -6.868895899999984};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: huaweiR
+        });
+        var contentString = '<div id="content">'+
+            '<h1 id="firstHeading" class="firstHeading">Huawei Technologies co. Ltd - Rabat</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Avenue Annakhil, Rabat, Morocco</p>'+
+            '<a href="huawei.com" target="blank">'+
+            'huawei.com</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: huaweiR,
+          map: map,
+          title: 'Huawei Technologies co. Ltd - Rabat'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByb2_bQgKD2noumrqIH5yy_Ae2DpKqRMM&callback=initMap">
+    </script>
 
                             </article>
                         </div>
@@ -175,7 +220,7 @@ function showDivs(n) {
 
            <section class="design-cover smoth">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="process">
 
                     <div class="section-title wow bounceInUp center animated">
                             <h2>Application Process</h2><!-- section title -->
@@ -213,7 +258,7 @@ function showDivs(n) {
            <section class="work-section smoth" id="service">
                 <div class="container">
                     
-                    <div class="row">
+                    <div class="row" id="tasks">
                         <div class="section-title wow bounceInUp center animated">
                             <h2>Tasks</h2><!-- section title -->
                         </div>
@@ -269,7 +314,7 @@ function showDivs(n) {
 
              <section class="about-section smoth light-about" id="about">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="reflections">
                         <div class="section-title wow bounceInUp center animated">
                             <h2>MY REFLECTIONS</h2><!-- section title -->
                         </div>
@@ -313,7 +358,7 @@ function showDivs(n) {
 
             <section class="working-prosess">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" >
                         <div class="working-item wow swing center animated">
                             <i class="fa fa-github-alt"></i>
                             <h2>Plan</h2>
@@ -340,9 +385,9 @@ function showDivs(n) {
 
             <section class="portfolio-section" id="portfolio">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="plan">
                         <div class="section-title portfolio-title wow bounceInUp center animated">
-                            <h2>MY PORTFOLIO</h2>
+                            <h2>Plan</h2>
                             <p>Lets check most recent project I've worked on </p>
                         </div>
                         <div class="big-demo go-wide" data-js-module="filtering-demo">
@@ -462,49 +507,28 @@ function showDivs(n) {
 
             <section class="client-section">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="socialm">
                         <div class="section-title wow bounceInUp center animated">
-                            <h2>clients feedback</h2><!-- title -->
+                            <h2>Social media feeds</h2><!-- title -->
                         </div>
                         <div id="client-carousel" class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="client-box">
-                                    <div style = "float : left;display: inline-block;" class="col-left">
+                                    
                                     <article class="about-me-box social-feed">
-                                    <a class="twitter-timeline" data-width="150 href="https://twitter.com/Huawei?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Tweets by Huawei Technologies</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                    <a class="twitter-timeline" data-height="703" href="https://twitter.com/Huawei?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Tweets by Huawei Technologies</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                     </article>
                                   </div>                                   
-                                </div>
+                                
                             </div><!-- end of /.client item -->
                             <div class="item">
                                 <div class="client-box">
-                                    <img src="images/client-2.jpg" width="125" height="140" alt=""><!-- clien profile image -->
-                                    <p>"Marcus is a full time Internet Marketing Analyst and Strategist. Her brain is an ocean of ideas and creativeness, and she loves expressing and sharing those ideas on her writings and artworks. Good service provider."</p>
-                                    <span>
-                                        <b>Porots Emmarn</b> <br>
-                                        c.e.o Nahina Studio ltd
-                                    </span>
-                                </div>
-                            </div><!-- end of /.client item -->
-                            <div class="item">
-                                <div class="client-box">
-                                    <img src="images/client-1.jpg" width="125" height="140" alt=""><!-- client profile -->
-                                    <p>"Marcus is a full time Internet Marketing Analyst and Strategist. Her brain is an ocean of ideas and creativeness, and she loves expressing and sharing those ideas on her writings and artworks. Good service provider."</p>
-                                    <span>
-                                        <b>Raihind krowt </b><br>
-                                        c.e.o,  Highown Tech. Ltd
-                                    </span>
-                                </div>
-                            </div><!-- end of /.client item -->
-                            <div class="item">
-                                <div class="client-box">
-                                    <img src="images/client-2.jpg" width="125" height="140" alt=""><!-- clien profile image -->
-                                    <p>"Marcus is a full time Internet Marketing Analyst and Strategist. Her brain is an ocean of ideas and creativeness, and she loves expressing and sharing those ideas on her writings and artworks. Good service provider."</p>
-                                    <span>
-                                        <b>Porots Emmarn</b><br>
-                                        c.e.o Nahina Studio ltd
-                                    </span>
-                                </div>
+                                    
+                                    <article class="about-me-box social-feed">
+                       <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BeI3e67hXaT/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BeI3e67hXaT/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Pause for a moment of reflection. Suddenly the busy city seems so far away... #HuaweiMate10 #HuaweiMoments #CapturedOnMate10</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/huaweimobile/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Huawei Mobile</a> (@huaweimobile) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-01-19T16:56:49+00:00">Jan 19, 2018 at 8:56am PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                       </article>
+                                  </div>                                   
+                                
                             </div><!-- end of /.client item -->
                         </div><!-- end of /.client carousel -->
                         <div class="customNavigation">
