@@ -574,67 +574,11 @@
        </section><!-- end of about /.section -->
 
 
-
-            <section class="contact-section" id="contact">
-               <!-- <div class="container">
-                    <div class="row">
-                        <div class="section-title wow bounceInUp center animated">
-                            <h2>LEAVE A COMMENT</h2>
-                        </div><-- contact title -->
-
-                        <div class="col-lg-6"  height: 500px;" id="style-1" style="margin-left: 300px;">
+<div class="col-lg-6"  height: 500px;" id="style-1" style="margin-left: 300px;" id="contact">
 
              <div class="section-title wow bounceInUp center animated">
                             <h2>LEAVE A COMMENT</h2><!-- section title -->
-            <!--</div>
             
-            <div id="showcomments">
-
-            <-- Begin Comments JavaScript Code --<script type="text/javascript" async>function ajaxpath_5a6995b44c5d5(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_5a6995b44c5d5"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_5a6995b44c5d5=document.createElement('script');fcs_5a6995b44c5d5.type="text/javascript";fcs_5a6995b44c5d5.src=ajaxpath_5a6995b44c5d5((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=5a6995b44c5d5&s=#!5a6995b44c5d5");setTimeout("document.getElementById('fcs_div_5a6995b44c5d5').appendChild(fcs_5a6995b44c5d5)",1);})();</script>
-         <?php
-            $name = (isset($_POST["name"]) ? $_POST["name"] : '');
-            $mes = (isset($_POST["mes"]) ? $_POST["mes"] : '');
-            $post = (isset($_POST["post"]) ? $_POST["post"] : '');
-
-            if($post){
-
-                #WRITE DOWN COMMENTS#
-
-               $write = fopen("com.txt", "a+");
-               fwrite($write, '<h4 class="glyphicon glyphicon-user"> '.$name.'</h4><br>'.$mes.'<br>');
-               fclose($write);
-
-
-                #DISPLAY COMMENTS#
-
-               $read = fopen("com.txt", "r+t");
-
-               echo "<h4>Previous Comments:</h4><br>";
-
-               while(!feof($read)){
-                   echo '<div class="comments-popup"><p>'.fread($read, 1024).'</p><br></div>';
-               }
-
-               fclose($read);
-
-            }
-
-            else {
-                #DISPLAY COMMENTS#
-
-               $read = fopen("com.txt", "r+t");
-
-               echo "<h4>Previous Comments:</h4><br>";
-
-               while(!feof($read)){
-                   echo '<div class="comments-popup"><p>'.fread($read, 1024).'</p><br></div>';
-               }
-
-            }
-
-            ?>﻿﻿
-            
-             </div>-->
 
              <div id="disqus_thread"></div>
 <script>
@@ -656,9 +600,7 @@ s.setAttribute('data-timestamp', +new Date());
              </div>
                         
                     </div><!-- end of /.row -->
-                </div><!-- end of /.container -->
-            </section><!-- end of /.contact section -->
-
+                
             <footer class="footer-section">
                 <div class="container">
                     <div class="row">
@@ -666,6 +608,10 @@ s.setAttribute('data-timestamp', +new Date());
                             <p><a href="../index.html" target="_blank">Integrated Project</a>. All Rights Reserved</p> 
                         </div><!-- coloumn -->
                     </div><!-- end of row -->
+
+           
+
+                        
                 </div><!-- end of /. container -->
             </footer><!-- end of /. footer section -->
         </div><!-- end  of /. wrapper -->
