@@ -586,11 +586,11 @@
 
              <div class="section-title wow bounceInUp center animated">
                             <h2>LEAVE A COMMENT</h2><!-- section title -->
-            </div>
+            <!--</div>
             
             <div id="showcomments">
 
-            <!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_5a6995b44c5d5(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_5a6995b44c5d5"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_5a6995b44c5d5=document.createElement('script');fcs_5a6995b44c5d5.type="text/javascript";fcs_5a6995b44c5d5.src=ajaxpath_5a6995b44c5d5((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=5a6995b44c5d5&s=#!5a6995b44c5d5");setTimeout("document.getElementById('fcs_div_5a6995b44c5d5').appendChild(fcs_5a6995b44c5d5)",1);})();</script>
+            <-- Begin Comments JavaScript Code --<script type="text/javascript" async>function ajaxpath_5a6995b44c5d5(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_5a6995b44c5d5"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_5a6995b44c5d5=document.createElement('script');fcs_5a6995b44c5d5.type="text/javascript";fcs_5a6995b44c5d5.src=ajaxpath_5a6995b44c5d5((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=5a6995b44c5d5&s=#!5a6995b44c5d5");setTimeout("document.getElementById('fcs_div_5a6995b44c5d5').appendChild(fcs_5a6995b44c5d5)",1);})();</script>
          <?php
             $name = (isset($_POST["name"]) ? $_POST["name"] : '');
             $mes = (isset($_POST["mes"]) ? $_POST["mes"] : '');
@@ -633,34 +633,28 @@
             }
 
             ?>﻿﻿
-            <!-- https://www.youtube.com/watch?v=O4BkHj7Ws9U -->
+            
+             </div>-->
+
+             <div id="disqus_thread"></div>
+<script>
+
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://integrated-project.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
              </div>
-             </div>
-                        <!--
-                        <form>
-                            <div class="form-group col-lg-6 wow bounceInUp center animated">
-                                <div class="input-group">
-                                    <div class="input-group-addon"><i class="fa fa-user"></i> </div>
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                </div>
-                                <div class="input-group">
-                                    <div class="input-group-addon"><i class="fa fa-envelope-o"></i> </div>
-                                    <input type="text" class="form-control" id="email" placeholder="Your Email">
-                                </div>
-                                <div class="input-group">
-                                    <div class="input-group-addon"><i class="fa fa-globe"></i> </div>
-                                    <input type="text" class="form-control" id="website" placeholder="Your Website">
-                                </div>
-                            </div>
-                            <div class="form-group col-lg-6 wow bounceInUp center animated">
-                                <div class="input-group">
-                                    <textarea name="message" class="form-control" id="message" cols="50" placeholder="Your massage"></textarea>
-                                </div>
-                                <div class="input-group">
-                                    <button type="submit"  class="form-submit">Send</button>
-                                </div>
-                            </div>
-                        </form><!-- end of /.contact form -->
+                        
                     </div><!-- end of /.row -->
                 </div><!-- end of /.container -->
             </section><!-- end of /.contact section -->
