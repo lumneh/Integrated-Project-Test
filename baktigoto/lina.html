@@ -229,37 +229,7 @@
                                 <p>Click on the icon to check location</p>
 
 
-<DIV id ="map"></DIV>
-<script>
-function initMap() {
-        var uluru = {lat: -20.097807, lng: 57.573235};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: uluru
-        });
-
-        var contentString = '<a href = "https://www.alueducation.com">www.alueducation.com</a>';
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-          title: 'Uluru (Ayers Rock)'
-        });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-      }
-
-</script>
-
-
-
-                                
-                                <!-- <div id="map" style="width: 400;height: 400">
+                              <div style = "width:300px; height:300px;" id ="map">
                                       
                                 </div>
                                 <script>
@@ -293,7 +263,7 @@ function initMap() {
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByb2_bQgKD2noumrqIH5yy_Ae2DpKqRMM&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEhxvVNoq1ivBpTyohlhAy2MSHrhJC7HU&callback=initMap">
     </script> -->
 
                             </article>
