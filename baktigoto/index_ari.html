@@ -78,15 +78,7 @@
                                 <h2>Hello, My name is <span>Anjolaoluwa Ariyike Adetimehin</span></h2>
                                 <h2>A Third year ALC student. I interned at <span>Thomson Reuters Africa</span></h2>
                                 <p> Where I worked on the Market Development, Client Specialist and Innovation Champions teams for three months from September 2017- December 2017</p>
-                                <!--
-                                <div class="social-media">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-behance"></i></a>
-                                </div>-->
+                                
                             </article>
                         </div> <!-- end of /.columns -->
                     </div><!-- end of /. row  -->
@@ -148,33 +140,6 @@
                                         </tr>
                                     </table>
                                 </p>
-<!--
-                                <!--<p>Adobe Photoshop</p>
-                                <div class="progressbar" data-perc="90">
-                                    <div class="bar"><span></span></div>
-                                    <div class="label wow bounceInLeft center animated"></div>
-                                </div>
-                                <p>Adobe Illustrator</p>
-                                <div class="progressbar" data-perc="80">
-                                    <div class="bar color2"><span></span></div>
-                                    <div class="label wow bounceInLeft center animated"></div>
-                                </div>
-                                <p>Html & Css</p>
-                                <div class="progressbar" data-perc="89">
-                                    <div class="bar color3"><span></span></div>
-                                    <div class="label wow bounceInLeft center animated"></div>
-                                </div>
-                                <p>Web Design</p>
-                                <div class="progressbar" data-perc="87">
-                                    <div class="bar color4"><span></span></div>
-                                    <div class="label wow bounceInLeft center animated"></div>
-                                </div>
-                                <p>UI/UX Design</p>
-                                <div class="progressbar" data-perc="95">
-                                    <div class="bar color4"><span></span></div>
-                                    <div class="label wow bounceInLeft center animated"></div>
-                                </div>-->
-
                             </div><!-- end of /.skill bx -->
                         </div><!-- end of /.columns -->
                     </div><!-- end of /.row -->
@@ -281,31 +246,48 @@
                             <h2> Thomson Reuters Lagos: Our Location </h2><!-- section title -->
                         </div>
 
-                        <p class="myspecial"> The Thomson Reuters Lagos office is located conveniently within the heart of Victoria Island in the KPMG Tower where it takes up one half of the 6th Floor </p> <h3 class="myspecial1"> Click the globe below to see our physical location within google maps</h3>
+                        <!--<p class="myspecial"> The Thomson Reuters Lagos office is located conveniently within the heart of Victoria Island in the KPMG Tower where it takes up one half of the 6th Floor </p> <h3 class="myspecial1"> Click the globe below to see our physical location within google maps</h3>-->
 
-                       <p> <a href="googlemaps_ari.html" target="_blank"> <img id="globallyknown" src="images/globe-512.png" height="100" width="100"/> </a> </p>
+                       <!--<p> <a href="googlemaps_ari.html" target="_blank"> <img id="globallyknown" src="images/globe-512.png" height="100" width="100"/> </a> </p>-->
 
-                        <!--
-                        <div class="working-item wow swing center animated">
-                            <i class="fa fa-github-alt"></i>
-                            <h2>Plan</h2>
-                        </div><!-- end of /.working item 1 --
-                        <div class="working-item wow swing center animated">
-                            <i class="fa fa-ioxhost"></i>
-                            <h2>Idea</h2>
-                        </div><!-- end of /.working item 2 --
-                        <div class="working-item wow swing center animated">
-                            <i class="fa fa-pencil-square-o"></i>
-                            <h2>Sketch  </h2>
-                        </div><!-- end of /.working item 3 --
-                        <div class="working-item wow swing center animated">
-                            <i class="fa fa-desktop"></i>
-                            <h2>Design</h2>
-                        </div><!-- end of /.working item 4 --
-                        <div class="working-item wow swing center animated">
-                            <i class="fa fa-check"></i>
-                            <h2>Launch</h2>
-                        </div><!-- end of /.working item 5 -->
+                        <div style="height: 400px; width: 1200px;" id="mapari"></div>
+    <script>
+
+      function initMap() {
+        var thomsonR = {lat: 6.434117199999999, lng: 3.4348817000000054};
+        var map = new google.maps.Map(document.getElementById('mapari'), {
+          zoom: 16,
+          center: thomsonR
+        });
+
+        var contentString = '<div id="content">'+
+            '<h1 id="firstHeading" class="firstHeading">Thomson Reuters, Lagos</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Located on the 6th Floor of the KPMG Tower, visit the website: </p>'+
+            '<a href="https://africa.thomsonreuters.com/en.html" target="blank">'+
+            'https://africa.thomsonreuters.com/en.html</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: thomsonR,
+          map: map,
+          title: 'Thomson Reuters Lagos'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByb2_bQgKD2noumrqIH5yy_Ae2DpKqRMM&callback=initMap">
+    </script>
+
                     </div><!-- end of /.row -->
                 </div><!-- end of /.container -->
             </section><!-- end of working prosess /.section -->
@@ -320,124 +302,13 @@
                         </div>
 
                         <iframe id="ariworkplan" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuHchhMq3GV3WfHS2Kf8BwuyRXTP40gCC03J0NF_QtygtkOTTtQ1lySdVixkFvKC5KCfzKuaGE49qW/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false" width="65%" height=500></iframe>
-                        <!--
-                        <div class="big-demo go-wide" data-js-module="filtering-demo">
-                            <div class="portfolio-menu">
-                                <div class="filter-button-group button-group js-radio-button-group menu-list">
-                                    <ul class="filter_menu">
-                                        <li class="active" data-filter="*">All</li>
-                                        <li data-filter=".web">Web Design</li>
-                                        <li data-filter=".mobile">Mobile App</li>
-                                        <li data-filter=".landing">Landing page</li>
-                                        <li data-filter=".ecommarce">Ecommarce</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="portfolio-item gallery">
-                                <div class="single-portfolio web mobile col-md-4 col-sm-6 col-xs-12" data-category="transition">
-                                    <div class="portfolio-single-item">
-                                        <a href="images/work-1.jpg" data-gal="prettyPhoto[gallery1]">
-                                            <img src="images/work-1.jpg" width="360" height="307" alt="portfolio image 1">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-portfolio mobile landing col-md-4 col-sm-6 col-xs-12" data-category="metalloid">
-                                    <div class="portfolio-single-item">
-                                        <a href="images/work-2.jpg" data-gal="prettyPhoto[gallery1]">
-                                            <img src="images/work-2.jpg" width="360" height="307" alt="Portfolio image 2">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-portfolio mobile col-md-4 col-sm-6 col-xs-12" data-category="transition">
-                                    <div class="portfolio-single-item">
-                                        <a href="images/work-3.jpg" data-gal="prettyPhoto[gallery1]">
-                                            <img src="images/work-3.jpg" width="360" height="307" alt="Portfolio Image 3">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-portfolio web ecommarce landing col-md-4 col-sm-6 col-xs-12" data-category="transition">
-                                    <div class="portfolio-single-item">
-                                        <a href="images/work-4.jpg" data-gal="prettyPhoto[gallery1]">
-                                            <img src="images/work-4.jpg" width="360" height="307" alt="Portfolio Image 4">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-portfolio landing ecommarce col-md-4 col-sm-6 col-xs-12" data-category="transition">
-                                    <div class="portfolio-single-item">
-                                        <a href="images/work-5.jpg" data-gal="prettyPhoto[gallery1]">
-                                            <img src="images/work-5.jpg" width="360" height="307" alt=" Portfolio Image 5">
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="single-portfolio web ecommarce col-md-4 col-sm-6 col-xs-12" data-category="transition">
-                                    <div class="portfolio-single-item">
-                                        <a href="images/work-6.jpg" data-gal="prettyPhoto[gallery1]">
-                                            <img src="images/work-6.jpg" width="360" height="307" alt="Portfolio Image 6">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>-->
+                        
                     </div><!-- end of /.row -->
                 </div><!-- end of /.container -->
             </section><!-- end of /.portfolio section -->
 
 
-            <!--
-            <section class="social-share-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h3>Interested in more details? find me on Behance, Dribble</h3>
-                            <a href="#">
-                                <i class="fa fa-behance"></i>&nbsp; Behance
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-dribbble"></i>&nbsp; Dribbble
-                            </a>
-                        </div><!-- end of /. column --
-                    </div><!-- end of /.row --
-                </div><!-- end of /.container --
-            </section><!-- end of /.social share -->
-
-            <!--
-            <section class="fun-facts-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="milestone-counter wow swing center animated">
-                                <i class="fa fa-check-square-o"></i>
-                                <h3 class="stat-count highlight"><b>192</b></h3>
-                                <div class="milestone-details">project complate</div>
-                            </div>
-                        </div><!-- end of /.columns 1 --
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="milestone-counter wow swing center animated">
-                                <i class="fa fa-users"></i>
-                                <h3 class="stat-count highlight"><b>198</b></h3>
-                                <div class="milestone-details">HAPPY CLIENTS </div>
-                            </div>
-                        </div><!-- end of /.columns 2 --
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="milestone-counter wow swing center animated">
-                                <i class="fa fa-coffee"></i>
-                                <h3 class="stat-count highlight"><b>950</b></h3>
-                                <div class="milestone-details">CUPS OF COFFEE</div>
-                            </div>
-                        </div><!-- end of /.columns 3 --
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="milestone-counter wow swing center animated">
-                                <i class="fa fa-clock-o"></i>
-                                <h3 class="stat-count highlight"><b>650</b></h3>
-                                <div class="milestone-details">HOURS OF WORK</div>
-                            </div>
-                        </div><!-- end of /.columns 4 --
-                    </div><!-- end of /.row --
-                </div><!-- end of /.container  --
-            </section><!-- end of /.fun facts section -->
+            
 
             <section class="client-section" id="reflectionAri">
                 <div class="container">
@@ -493,58 +364,7 @@
                                 <li>Be patient with yourself</li>
                             </ul>
                         </div>
-                        <!--
-                        <div id="client-carousel" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="client-box">
-                                    <img src="images/client-1.jpg" width="125" height="140" alt=""><!-- client profile --
-                                    <p>"Marcus is a full time Internet Marketing Analyst and Strategist. Her brain is an ocean of ideas and creativeness, and she loves expressing and sharing those ideas on her writings and artworks. Good service provider."</p>
-                                    <span>
-                                        <b>Raihind krowt </b><br>
-                                        c.e.o,  Highown Tech. Ltd
-                                    </span>
-                                </div>
-                            </div><!-- end of /.client item --
-                            <div class="item">
-                                <div class="client-box">
-                                    <img src="images/client-2.jpg" width="125" height="140" alt=""><!-- clien profile image --
-                                    <p>"Marcus is a full time Internet Marketing Analyst and Strategist. Her brain is an ocean of ideas and creativeness, and she loves expressing and sharing those ideas on her writings and artworks. Good service provider."</p>
-                                    <span>
-                                        <b>Porots Emmarn</b> <br>
-                                        c.e.o Nahina Studio ltd
-                                    </span>
-                                </div>
-                            </div><!-- end of /.client item --
-                            <div class="item">
-                                <div class="client-box">
-                                    <img src="images/client-1.jpg" width="125" height="140" alt=""><!-- client profile --
-                                    <p>"Marcus is a full time Internet Marketing Analyst and Strategist. Her brain is an ocean of ideas and creativeness, and she loves expressing and sharing those ideas on her writings and artworks. Good service provider."</p>
-                                    <span>
-                                        <b>Raihind krowt </b><br>
-                                        c.e.o,  Highown Tech. Ltd
-                                    </span>
-                                </div>
-                            </div><!-- end of /.client item --
-                            <div class="item">
-                                <div class="client-box">
-                                    <img src="images/client-2.jpg" width="125" height="140" alt=""><!-- clien profile image --
-                                    <p>"Marcus is a full time Internet Marketing Analyst and Strategist. Her brain is an ocean of ideas and creativeness, and she loves expressing and sharing those ideas on her writings and artworks. Good service provider."</p>
-                                    <span>
-                                        <b>Porots Emmarn</b><br>
-                                        c.e.o Nahina Studio ltd
-                                    </span>
-                                </div>
-                            </div><!-- end of /.client item --
-                        </div><!-- end of /.client carousel -->
-                        <!--
-                        <div class="customNavigation">
-                            <a class="prev">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a class="next">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </div><!-- end of /.slider navigation -->
+                       
                     </div><!-- end /.row -->
                 </div><!-- end of /.container -->
             </section><!-- end of /.client section -->
@@ -593,9 +413,9 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-             </div>
-                        
-                    </div><!-- end of /.row -->
+             </div>    
+                </div><!-- end of /.row -->
+
 
                </div><!-- end of /.row -->
            </div><!-- end of /.container -->
