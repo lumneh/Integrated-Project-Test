@@ -154,9 +154,41 @@
 								<p>Deloitte East Africa is located in Nairobi along Waiyaki Way. <br><strong>Click the icon</strong></p>
 								
 							</article>
-							<div id = "yes">
-                            <p><a href="map_achieng.html"> <img id="mappy" src="images/map2.png" border="0"/> </a> </p>
-                            </div>
+							<div id="map" style ="height:350px; width:500px;"></div>
+    <script>
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+      function initMap() {
+        var deloitte = {lat: -1.2633736, lng: 36.765210600000046};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: deloitte
+        });
+        var contentString = '<div id="content">'+
+            '<h1 id="firstHeading" class="firstHeading">Deloitte, Nairobi</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Visit the website: </p>'+
+            '<a href="https://www2.deloitte.com/ke/en.html" target="blank">'+
+            'DELOITTE AND TOUCHE EAST AFRICA</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: deloitte,
+          map: map,
+          title: 'Deloitte East Africa'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByb2_bQgKD2noumrqIH5yy_Ae2DpKqRMM&callback=initMap">
+    </script>
                         </div><!-- end of /.columns -->
                     </div><!-- end of /.row -->
                 </div><!-- end of /.container -->
